@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ed91229aae.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+align-items: center;
+height: 10vh;
+        }
+        ul li{
+           display: inline-block;
+           margin: 0px 15px;
+        }
+        .search{
+            width: 100%;
+           display: flex;
+            background-color: brown;
+            height: 10vh;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        input{
+           
+            width: 500px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .home{
+            width: 100%;
+            height: 70vh;
+            background-image: url(a.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+.icon{
+    position: absolute;
+    right:30% ;
+}
+
+@media(min-width:500px) and (max-width:700px){
+    .search{
+        background-color: blueviolet;
+    }
+    ul li{
+        margin: 0px 10px;
+    }
+}
+@media(min-width:300px) and (max-width:499px){
+    .search{
+        background-color: rgb(10, 10, 10);
+    }
+    .container{
+        margin-top: 20px;
+    }
+    ul{
+        margin-top: 80px;
+    }
+    ul li{
+        display: block;
+        margin: 5px 10px;
+    }
+    .home{
+        margin-top: 80px;
+    }
+    h1{
+        font-size:22px;
+        color: white;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="search">
+        
+        <input type="search" placeholder="search any Thing">
+        <i class="fa-solid fa-magnifying-glass icon"></i>
+    </div>
+    <div class="container">
+        <div class="logo">logo hear</div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Abour</a></li>
+                <li><a href="">Contect</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </nav>
+        <div class="btn">
+            <a href="">Login</a>
+            <a href="">Loug out</a>
+        </div>
+    </div>
+    <div class="home">
+        <div class="text">
+            <h1>this is the Simple website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rem impedit obcaecati quae eum incidunt alias, eaque repellat nihil voluptates ab laborum porro officiis necessitatibus aliquid accusantium, natus dignissimos aliquam.</p>
+        </div>
+    </div>
+</body>
+</html>

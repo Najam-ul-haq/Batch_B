@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 200px;
+            background-color: coral;
+            border: 2px solid gray;
+        }
+        .abc{
+            visibility: visible;
+        }
+        .a{
+          display: none;
+        }
+        h1{
+            /* visibility:hidden; */
+            display: none;
+        }
+        li{
+            display: inline-block;
+            margin: 10px 15px;
+        }
+        li ul{
+            position: absolute;
+            display: none;
+        }
+        li ul li{
+            display: block;
+            
+        } 
+        li:hover > ul{
+            display: block;
+            background-color: brown;
+            
+        }
+        a{
+            color: rgb(219, 25, 25);
+        }
+        li:hover >.n{
+    background-color: rgb(23, 23, 24);
+    color: white;
+    padding-left: -30px;
+    
+        }
+        li:hover >.n li{
+            margin-left: -30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+           <ul>
+            <li><a href="">Home</a>
+            <ul>
+                <li><a href="">Home2</a></li>
+                <li><a href="">Home2</a></li>
+                <li><a href="">Home2</a></li>
+            </ul>
+            </li>
+            <li><a href="">Home</a>\
+                <ul>
+                    <li><a href="">Home2</a></li>
+                    <li><a href="">Home2</a></li>
+                    <li><a href="">Home2</a></li>
+                </ul>
+        </li>
+            <li><a href="">Home</a>
+                <ul>
+                    <li><a href="">Home2</a></li>
+                    <li><a href="">Home2</a></li>
+                    <li><a href="">Home2</a></li>
+                </ul>
+            </li>
+            <li><a href="">Home</a>
+                <ul>
+                    <li><a href="">Home2</a></li>
+                    <li><a href="">Home2</a></li>
+                    <li><a href="">Home2</a></li>
+                </ul>
+            </li>
+            <li><a href="">Home</a>
+                <ul class="n">
+                    <li><a href="">Home2</a></li>
+                    <li><a href="">Home2</a></li>
+                    <li><a href="">Home2</a></li>
+                </ul>
+            </li>
+           </ul>
+        </nav>
+        <!-- <div class="box abc">this is first
+            <h1>this is txt</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum enim a, eveniet error impedit dolore!</p>
+        </div>
+        <div class="box a">this is second</div>
+        <div class="box b">this is third</div> -->
+    </div>
+</body>
+</html>

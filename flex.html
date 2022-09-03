@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            display:flex;
+            width: 100%;
+            height: 10vh;
+            background-color: cornflowerblue;
+            justify-content: space-between;
+            align-items: center;
+        }
+       
+        nav li{
+            display: inline-block;
+            margin: 0px 15px;
+        }
+        nav li a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .home{
+            display: flex;
+        }
+        .left{
+            width: 25%;
+            height: 70vh;
+        }
+        .text_area{
+            width: 75%;
+            background-color: darkcyan;
+            
+        }
+        .services{
+            background-color: brown;
+            height: 20vh;
+        }
+        .services h1{
+           
+            text-align: center;
+        color: white;
+        line-height: 2;
+        }
+.services p{
+    color: white;
+    text-align: center;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    border: 1px solid gray;
+}
+.box img{
+    width: 300px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contect</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <div class="logo">My logo Hear</div>
+        <div class="icons">
+icons
+        </div>
+    </header>
+
+    <div class="home">
+        <div class="left">Home </div>
+        <div class="text_area">
+            <div class="services">
+                <h1>This is the Services we provide our users</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo modi voluptate fuga debitis architecto assumenda doloremque ad saepe, dolorem deleniti quasi totam nulla nam, et enim soluta harum pariatur dicta?</p>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="title"><h2>Web Development</h2></div>
+                    <div class="box-img"><img src="a.jpg" alt=""></div>
+                    <div class="btn"><a href="#">Read more</a> <button>submit</button></div>
+                </div>
+                <div class="box">
+                    <div class="title"><h2>Web Development</h2></div>
+                    <div class="box-img"><img src="a.jpg" alt=""></div>
+                    <div class="btn"><a href="#">Read more</a> <button>submit</button></div>
+                </div>
+                <div class="box">
+                    <div class="title"><h2>Web Development</h2></div>
+                    <div class="box-img"><img src="a.jpg" alt=""></div>
+                    <div class="btn"><a href="#">Read more</a> <button>submit</button></div>
+                </div>
+            </div>
+           
+           
+        </div>
+    </div>
+    <div class="footer">
+        <h3>copyright@gmail.com</h3>
+    </div>
+</body>
+</html>
