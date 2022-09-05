@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .con {
+        width: 50%;
+        height: 80vh;
+        /* background-image: url(/images/wasa-crispbread-k0_NZJf2Knw-unsplash.jpg);
+        background-position: center;
+        background-size: cover; */
+        position: relative;
+        border: 2px solid gainsboro;
+      }
+      .con::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url(/images/istockphoto-802372146-1024x1024.jpg);
+        background-position: center;
+        background-size: cover;
+        opacity: 0.5;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      h1 {
+        text-align: center;
+        border: 2px solid green;
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <h1>helo This is the word</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolor
+        illum nemo pariatur hic voluptatibus nostrum fugiat iure sunt ab dolorum
+        tenetur fuga, minus sint, libero quia tempora. Nulla, necessitatibus?
+      </p>
+    </div>
+  </body>
+</html>
